@@ -13,9 +13,12 @@
 		B5CDF2FE26B9769200614622 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5CDF2FC26B9769200614622 /* Main.storyboard */; };
 		B5CDF30026B9769300614622 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5CDF2FF26B9769300614622 /* Assets.xcassets */; };
 		B5CDF30326B9769300614622 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5CDF30126B9769300614622 /* LaunchScreen.storyboard */; };
+		E79B05AEAB6E253260160D2B /* Pods_HomeWorkProject_2_9.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9808163628278962A82FF5F /* Pods_HomeWorkProject_2_9.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03EC81CD9F090EC250C45095 /* Pods-HomeWorkProject_2.9.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWorkProject_2.9.release.xcconfig"; path = "Target Support Files/Pods-HomeWorkProject_2.9/Pods-HomeWorkProject_2.9.release.xcconfig"; sourceTree = "<group>"; };
+		0E64F92929D9C36E31095998 /* Pods-HomeWorkProject_2.9.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWorkProject_2.9.debug.xcconfig"; path = "Target Support Files/Pods-HomeWorkProject_2.9/Pods-HomeWorkProject_2.9.debug.xcconfig"; sourceTree = "<group>"; };
 		B5CDF2F326B9769200614622 /* HomeWorkProject_2.9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWorkProject_2.9.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5CDF2F626B9769200614622 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5CDF2F826B9769200614622 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		B5CDF2FF26B9769300614622 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5CDF30226B9769300614622 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5CDF30426B9769300614622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9808163628278962A82FF5F /* Pods_HomeWorkProject_2_9.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeWorkProject_2_9.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E79B05AEAB6E253260160D2B /* Pods_HomeWorkProject_2_9.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26A2154A03C576649FB10C93 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E64F92929D9C36E31095998 /* Pods-HomeWorkProject_2.9.debug.xcconfig */,
+				03EC81CD9F090EC250C45095 /* Pods-HomeWorkProject_2.9.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B5CDF2EA26B9769200614622 = {
 			isa = PBXGroup;
 			children = (
 				B5CDF2F526B9769200614622 /* HomeWorkProject_2.9 */,
 				B5CDF2F426B9769200614622 /* Products */,
+				26A2154A03C576649FB10C93 /* Pods */,
+				BF5B8D7C4F44BBCCB7B26C32 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = HomeWorkProject_2.9;
 			sourceTree = "<group>";
 		};
+		BF5B8D7C4F44BBCCB7B26C32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9808163628278962A82FF5F /* Pods_HomeWorkProject_2_9.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5CDF30726B9769300614622 /* Build configuration list for PBXNativeTarget "HomeWorkProject_2.9" */;
 			buildPhases = (
+				1076F10649DEB7122AD42E01 /* [CP] Check Pods Manifest.lock */,
 				B5CDF2EF26B9769200614622 /* Sources */,
 				B5CDF2F026B9769200614622 /* Frameworks */,
 				B5CDF2F126B9769200614622 /* Resources */,
+				D047480E6E6A6ADDEAE46768 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1076F10649DEB7122AD42E01 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HomeWorkProject_2.9-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D047480E6E6A6ADDEAE46768 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HomeWorkProject_2.9/Pods-HomeWorkProject_2.9-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HomeWorkProject_2.9/Pods-HomeWorkProject_2.9-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HomeWorkProject_2.9/Pods-HomeWorkProject_2.9-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B5CDF2EF26B9769200614622 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		B5CDF30826B9769300614622 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E64F92929D9C36E31095998 /* Pods-HomeWorkProject_2.9.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		B5CDF30926B9769300614622 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03EC81CD9F090EC250C45095 /* Pods-HomeWorkProject_2.9.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
